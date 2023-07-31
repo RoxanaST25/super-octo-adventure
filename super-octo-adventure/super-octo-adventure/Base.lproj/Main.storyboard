@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,54 +13,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="super_octo_adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-Sl-U6C">
-                                <rect key="frame" x="0.0" y="48" width="393" height="761"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-Sl-U6C">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1346"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-jW-t9E">
-                                <rect key="frame" x="84" y="110" width="219" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-jW-t9E">
+                                <rect key="frame" x="452.5" y="44" width="119" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHt-W0-FDd">
-                                <rect key="frame" x="95" y="229" width="209" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON GOING ALL OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-2E-pPx">
-                                <rect key="frame" x="104" y="292" width="190" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-2E-pPx">
+                                <rect key="frame" x="417" y="204" width="190" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find a team in your city and dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-rp-RfG">
-                                <rect key="frame" x="69" y="326" width="276" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city and dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taU-rp-RfG">
+                                <rect key="frame" x="38" y="245" width="945" height="24"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-kd-9lK" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
-                                <rect key="frame" x="43" y="708" width="316" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-kd-9lK" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1291.5" width="1024" height="34.5"/>
                                 <color key="backgroundColor" white="0.43417835887687067" alpha="0.54721129966887416" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get started"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHt-W0-FDd">
+                                <rect key="frame" x="407.5" y="149" width="209" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Znr-kd-9lK" secondAttribute="bottom" constant="20" id="3zY-IT-3Xx"/>
+                            <constraint firstItem="OwI-2E-pPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="65Q-iy-Hua"/>
+                            <constraint firstItem="taU-rp-RfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="6iH-Wf-N4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="taU-rp-RfG" secondAttribute="trailing" constant="41" id="PrU-Er-XBI"/>
+                            <constraint firstItem="taU-rp-RfG" firstAttribute="top" secondItem="OwI-2E-pPx" secondAttribute="bottom" constant="15" id="TGr-rV-eaR"/>
+                            <constraint firstItem="HBV-Sl-U6C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WvB-1q-XFF"/>
+                            <constraint firstItem="HBV-Sl-U6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yp6-tT-7Zd"/>
+                            <constraint firstItem="gtX-jW-t9E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e5a-Nm-xfb"/>
+                            <constraint firstItem="HBV-Sl-U6C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kuh-3o-dFx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HBV-Sl-U6C" secondAttribute="bottom" id="l6U-Mg-PfQ"/>
+                            <constraint firstItem="BHt-W0-FDd" firstAttribute="top" secondItem="gtX-jW-t9E" secondAttribute="bottom" constant="85" id="lll-co-2Hd"/>
+                            <constraint firstItem="OwI-2E-pPx" firstAttribute="top" secondItem="BHt-W0-FDd" secondAttribute="bottom" id="tne-pK-esu"/>
+                            <constraint firstItem="BHt-W0-FDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tta-yp-vQl"/>
+                            <constraint firstItem="Znr-kd-9lK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ws6-Jw-iqu"/>
+                            <constraint firstItem="gtX-jW-t9E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xzf-HP-1Nw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Znr-kd-9lK" secondAttribute="trailing" id="zrM-fY-X1w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgimg" destination="HBV-Sl-U6C" id="jeg-u1-Rw7"/>
+                        <outlet property="swoosh" destination="gtX-jW-t9E" id="Vix-lh-2if"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="100" y="2.2167487684729066"/>
         </scene>
     </scenes>
     <resources>
