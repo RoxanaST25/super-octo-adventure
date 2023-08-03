@@ -20,9 +20,11 @@ class ViewController: UIViewController {
 //        let smallX = bigX - (swoosh.frame.size.width/2)
 //        swoosh.frame = CGRect(x: smallX, y: 90, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
         
+        
 //        bgimg.frame = view.frame;
     }
-
-
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        
+    }
 }
 
