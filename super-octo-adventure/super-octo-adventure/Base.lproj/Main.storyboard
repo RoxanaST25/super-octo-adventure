@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="super_octo_adventure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="super_octo_adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-jW-t9E">
-                                <rect key="frame" x="154.66666666666663" y="67" width="119" height="20"/>
+                                <rect key="frame" x="154.66666666666666" y="67" width="118.99999999999997" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwI-2E-pPx">
                                 <rect key="frame" x="119" y="227" width="190" height="26"/>
@@ -34,7 +34,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-kd-9lK" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-kd-9lK" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="837.66666666666663" width="428" height="34.333333333333371"/>
                                 <color key="backgroundColor" white="0.43417835887687067" alpha="0.54721129966887416" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,18 +73,17 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bgimg" destination="HBV-Sl-U6C" id="jeg-u1-Rw7"/>
-                        <outlet property="swoosh" destination="gtX-jW-t9E" id="Vix-lh-2if"/>
+                        <outlet property="swoosh" destination="gtX-jW-t9E" id="zIl-q1-55O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="99.069767441860463" y="1.9313304721030045"/>
+            <point key="canvasLocation" x="-52" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="pgR-zt-hzk">
             <objects>
-                <viewController id="NwM-SF-bSO" sceneMemberID="viewController">
+                <viewController id="NwM-SF-bSO" customClass="LeagueVC" customModule="super_octo_adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VeP-Kt-n3H">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,30 +94,39 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8k5-nS-1hU">
                                 <rect key="frame" x="0.0" y="168" width="428" height="129"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-HW-DZg" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-HW-DZg" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="34.333333333333336"/>
                                         <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Mens"/>
+                                        <connections>
+                                            <action selector="mensTapped:" destination="NwM-SF-bSO" eventType="touchUpInside" id="RnQ-C8-kOX"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBl-dh-Cry" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBl-dh-Cry" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="47.333333333333343" width="428" height="34.333333333333343"/>
                                         <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Womens"/>
+                                        <connections>
+                                            <action selector="womensTapped:" destination="NwM-SF-bSO" eventType="touchUpInside" id="zXF-x1-kG7"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAt-zr-QVA" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAt-zr-QVA" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="94.666666666666686" width="428" height="34.333333333333343"/>
                                         <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Co-ed"/>
+                                        <connections>
+                                            <action selector="coedTapped:" destination="NwM-SF-bSO" eventType="touchUpInside" id="zmG-vf-af7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-eX-cpC" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-eX-cpC" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="861.66666666666663" width="428" height="34.333333333333371"/>
                                 <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -127,6 +135,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="NwM-SF-bSO" eventType="touchUpInside" id="UoQ-gT-cT7"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="9w7-t1-TzB">
                                 <rect key="frame" x="0.0" y="40" width="428" height="78"/>
@@ -176,32 +187,35 @@
                             <constraint firstItem="L4L-1Z-T1g" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4ZX-8K-Msc" secondAttribute="trailing" symbolic="YES" id="zLX-g4-m9M"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2EB-mI-0zQ"/>
+                    <connections>
+                        <outlet property="nextBtn" destination="XVL-eX-cpC" id="Edz-5I-uxr"/>
+                        <segue destination="nou-Uz-xnd" kind="show" identifier="skillVCSegue" id="Czo-ir-teY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evb-Jc-HEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aXl-Ws-vac" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="830" y="115"/>
+            <point key="canvasLocation" x="824" y="157"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="z0j-wJ-7sZ">
             <objects>
-                <viewController id="nou-Uz-xnd" sceneMemberID="viewController">
+                <viewController id="nou-Uz-xnd" customClass="SkillVC" customModule="super_octo_adventure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6T8-Ev-8fJ">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="PrY-k8-zdA">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="916"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="HEK-vn-pu9">
-                                <rect key="frame" x="0.0" y="67" width="428" height="78"/>
+                                <rect key="frame" x="0.0" y="20" width="428" height="78"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="U0t-L2-IYS">
-                                        <rect key="frame" x="154.66666666666663" y="0.0" width="119" height="20"/>
+                                        <rect key="frame" x="154.66666666666666" y="0.0" width="118.99999999999997" height="20"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUU-IL-3AF">
-                                        <rect key="frame" x="185.33333333333337" y="54" width="57.333333333333314" height="24"/>
+                                        <rect key="frame" x="185.33333333333334" y="54" width="57.333333333333343" height="24"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -209,16 +223,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-gW-qbN">
-                                <rect key="frame" x="0.0" y="195" width="428" height="50"/>
+                                <rect key="frame" x="0.0" y="148" width="428" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5g-c8-ORc" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5g-c8-ORc" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                         <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Begginer"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-jf-wQS" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGn-jf-wQS" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                         <rect key="frame" x="228" y="0.0" width="200" height="50"/>
                                         <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -230,8 +244,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfQ-3t-J5D" customClass="BorderButtom" customModule="super_octo_adventure" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="822" width="428" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfQ-3t-J5D" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="846" width="428" height="50"/>
                                 <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cZ3-Ir-akk"/>
@@ -259,10 +273,11 @@
                             <constraint firstItem="UfQ-3t-J5D" firstAttribute="trailing" secondItem="DYJ-o0-ZmP" secondAttribute="trailing" id="rjh-AG-iOj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IBq-Of-40j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYs-nb-VF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651.7578125" y="301.75695461200581"/>
+            <point key="canvasLocation" x="1651.4018691588783" y="301.29589632829374"/>
         </scene>
     </scenes>
     <resources>

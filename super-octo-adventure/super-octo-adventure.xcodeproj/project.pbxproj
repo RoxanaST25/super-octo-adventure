@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		46781A6A2A70C80600791746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A692A70C80600791746 /* AppDelegate.swift */; };
 		46781A6C2A70C80600791746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A6B2A70C80600791746 /* SceneDelegate.swift */; };
-		46781A6E2A70C80600791746 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A6D2A70C80600791746 /* ViewController.swift */; };
+		46781A6E2A70C80600791746 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A6D2A70C80600791746 /* WelcomeVC.swift */; };
 		46781A712A70C80600791746 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46781A6F2A70C80600791746 /* Main.storyboard */; };
 		46781A732A70C80800791746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46781A722A70C80800791746 /* Assets.xcassets */; };
 		46781A762A70C80800791746 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46781A742A70C80800791746 /* LaunchScreen.storyboard */; };
-		46781A7F2A70D9E200791746 /* BorderButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A7E2A70D9E200791746 /* BorderButtom.swift */; };
+		46781A7F2A70D9E200791746 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A7E2A70D9E200791746 /* BorderButton.swift */; };
+		46781A852A7C3BC600791746 /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A842A7C3BC600791746 /* LeagueVC.swift */; };
+		46781A872A7C3C0400791746 /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A862A7C3C0400791746 /* SkillVC.swift */; };
+		46781A892A90AE2C00791746 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A882A90AE2C00791746 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46781A662A70C80600791746 /* super-octo-adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "super-octo-adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46781A692A70C80600791746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46781A6B2A70C80600791746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46781A6D2A70C80600791746 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46781A6D2A70C80600791746 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		46781A702A70C80600791746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46781A722A70C80800791746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46781A752A70C80800791746 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46781A772A70C80800791746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46781A7E2A70D9E200791746 /* BorderButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtom.swift; sourceTree = "<group>"; };
+		46781A7E2A70D9E200791746 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		46781A842A7C3BC600791746 /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		46781A862A7C3C0400791746 /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
+		46781A882A90AE2C00791746 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 		46781A5D2A70C80600791746 = {
 			isa = PBXGroup;
 			children = (
+				46781A882A90AE2C00791746 /* File.swift */,
 				46781A682A70C80600791746 /* super-octo-adventure */,
 				46781A672A70C80600791746 /* Products */,
 			);
@@ -58,10 +65,11 @@
 		46781A682A70C80600791746 /* super-octo-adventure */ = {
 			isa = PBXGroup;
 			children = (
+				46781A812A7C285B00791746 /* Model */,
+				46781A802A7C285000791746 /* Controller */,
 				46781A7D2A70D91100791746 /* Views */,
 				46781A692A70C80600791746 /* AppDelegate.swift */,
 				46781A6B2A70C80600791746 /* SceneDelegate.swift */,
-				46781A6D2A70C80600791746 /* ViewController.swift */,
 				46781A6F2A70C80600791746 /* Main.storyboard */,
 				46781A722A70C80800791746 /* Assets.xcassets */,
 				46781A742A70C80800791746 /* LaunchScreen.storyboard */,
@@ -73,9 +81,26 @@
 		46781A7D2A70D91100791746 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				46781A7E2A70D9E200791746 /* BorderButtom.swift */,
+				46781A7E2A70D9E200791746 /* BorderButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		46781A802A7C285000791746 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46781A6D2A70C80600791746 /* WelcomeVC.swift */,
+				46781A842A7C3BC600791746 /* LeagueVC.swift */,
+				46781A862A7C3C0400791746 /* SkillVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46781A812A7C285B00791746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46781A6E2A70C80600791746 /* ViewController.swift in Sources */,
+				46781A852A7C3BC600791746 /* LeagueVC.swift in Sources */,
+				46781A6E2A70C80600791746 /* WelcomeVC.swift in Sources */,
+				46781A892A90AE2C00791746 /* File.swift in Sources */,
 				46781A6A2A70C80600791746 /* AppDelegate.swift in Sources */,
-				46781A7F2A70D9E200791746 /* BorderButtom.swift in Sources */,
+				46781A7F2A70D9E200791746 /* BorderButton.swift in Sources */,
+				46781A872A7C3C0400791746 /* SkillVC.swift in Sources */,
 				46781A6C2A70C80600791746 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
