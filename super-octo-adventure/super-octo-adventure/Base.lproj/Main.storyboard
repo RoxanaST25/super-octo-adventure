@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="29"/>
+            <point key="canvasLocation" x="-63" y="41"/>
         </scene>
         <!--LeagueVC-->
         <scene sceneID="pgR-zt-hzk">
@@ -129,6 +129,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVL-eX-cpC" customClass="BorderButton" customModule="super_octo_adventure" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="861.66666666666663" width="428" height="34.333333333333371"/>
                                 <color key="backgroundColor" white="0.43417835890000001" alpha="0.54721129970000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="qX8-4W-G7z"/>
                                 </constraints>
@@ -195,7 +199,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evb-Jc-HEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="aXl-Ws-vac" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="824" y="157"/>
+            <point key="canvasLocation" x="845" y="41"/>
         </scene>
         <!--SkillVC-->
         <scene sceneID="z0j-wJ-7sZ">
@@ -252,7 +256,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Finish"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DYJ-o0-ZmP"/>
@@ -277,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYs-nb-VF8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1651.4018691588783" y="301.29589632829374"/>
+            <point key="canvasLocation" x="1709" y="41"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4654D54E2AA0CA82007519D0 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4654D54D2AA0CA82007519D0 /* player.swift */; };
 		46781A6A2A70C80600791746 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A692A70C80600791746 /* AppDelegate.swift */; };
 		46781A6C2A70C80600791746 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A6B2A70C80600791746 /* SceneDelegate.swift */; };
 		46781A6E2A70C80600791746 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46781A6D2A70C80600791746 /* WelcomeVC.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4654D54D2AA0CA82007519D0 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		46781A662A70C80600791746 /* super-octo-adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "super-octo-adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46781A692A70C80600791746 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46781A6B2A70C80600791746 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		46781A812A7C285B00791746 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4654D54D2AA0CA82007519D0 /* player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				46781A6E2A70C80600791746 /* WelcomeVC.swift in Sources */,
 				46781A892A90AE2C00791746 /* File.swift in Sources */,
 				46781A6A2A70C80600791746 /* AppDelegate.swift in Sources */,
+				4654D54E2AA0CA82007519D0 /* player.swift in Sources */,
 				46781A7F2A70D9E200791746 /* BorderButton.swift in Sources */,
 				46781A872A7C3C0400791746 /* SkillVC.swift in Sources */,
 				46781A6C2A70C80600791746 /* SceneDelegate.swift in Sources */,
