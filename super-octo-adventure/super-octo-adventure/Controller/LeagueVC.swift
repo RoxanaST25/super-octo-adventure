@@ -16,6 +16,7 @@ class LeagueVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if i initialize a var here it will change everytime but if i do it outside the val will remain
         player = Player()
         nextBtn.isUserInteractionEnabled = false
         // Do any additional setup after loading the view.
@@ -45,6 +46,17 @@ class LeagueVC: UIViewController {
         nextBtn.isUserInteractionEnabled = true
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        prepare for segue is always called before viewdidload (on the destination viewcontroller)
+        if let skillVC = segue.destination as? SkillVC {
+            skillVC.player = player
+//  this is how we update the player from skillVC
+// is the segue <- segue.destinantion -> is the view controller
+            
+        }
+//        if its overwriten means is gonna b called by the view controller itself
+//        this func is to pass data to different view controllers
+    }
 }
 //every optional in the class i have to initialize inside the viewdidload.
 //
